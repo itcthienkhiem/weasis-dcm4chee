@@ -17,8 +17,8 @@ function openWeasis() {
       
       // NG case
       //const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.89398059268538153291963197031989659758"';
-      //const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
-      const url = `$dicom:rs --url "https://demo.orthanc-server.com/dicom-web" -r "patientID=ozp00SjY2xG"`;
+      const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
+      //const url = `$dicom:rs --url "https://demo.orthanc-server.com/dicom-web" -r "patientID=ozp00SjY2xG"`;
       new_url = "weasis://"+encodeURIComponent(url);
       window.open(new_url, '_self');
 }      
