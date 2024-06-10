@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Open Weasis</h1>
+
+<button onclick="openWeasis()">Open</button>
+
+<p id="demo"></p>
+
+<script>
+function openWeasis() {
+	  // OK case
+      //const url = '$dicom:rs --url="http://192.168.201.54:8080/dcm4chee-arc/aets/DCM4CHEE/rs" --request="studyUID=2.25.49432954989171702340507029433394145518"';
+      //const url = '$dicom:rs --url="http://192.168.201.54:8080/dcm4chee-arc/aets/DCM4CHEE/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
+      //
+      //const url = `$dicom:rs --url "https://demo.orthanc-server.com/dicom-web" -r "patientID=ozp00SjY2xG"`;
+      
+      // NG case
+      //const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.89398059268538153291963197031989659758"';
+      const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
+      
+      new_url = "weasis://"+encodeURIComponent(url);
+      window.open(new_url, '_self');
+}      
+</script>
+
+</body>
+</html>
