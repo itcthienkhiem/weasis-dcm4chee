@@ -10,15 +10,18 @@
 <script>
 function openWeasis() {
 	  // OK case
-      //const url = '$dicom:rs --url="http://192.168.201.54:8080/dcm4chee-arc/aets/DCM4CHEE/rs" --request="studyUID=2.25.49432954989171702340507029433394145518"';
+      //const url = '$dicom:rs --url="http://192.168.201.60:8080/dcm4chee-arc/aets/VHC/rs" --request="studyUID=1.2.840.113619.6.495.45995915047352793818667138636150581280"';
+      //const url = '$dicom:rs --url="http://192.168.201.15:8082/dicomweb/DCM4CHEE/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
+      //const url = '$dicom:rs --url="http://192.168.201.15:8082/dcm4chee-arc/aets/DCM4CHEE/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
+      
       //const url = '$dicom:rs --url="http://192.168.201.54:8080/dcm4chee-arc/aets/DCM4CHEE/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
       //
       //const url = `$dicom:rs --url "https://demo.orthanc-server.com/dicom-web" -r "patientID=ozp00SjY2xG"`;
       
-      // NG case
+      // OK case
       //const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.89398059268538153291963197031989659758"';
-      const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dicomweb/VHC/rs" --request="studyUID=2.25.270567409614410832213777822730733064257"';
-      //const url = `$dicom:rs --url "https://demo.orthanc-server.com/dicom-web" -r "patientID=ozp00SjY2xG"`;
+      const url = '$dicom:rs --url="https://cdha.viethealthcareclinic.com/dcm4chee-arc/aets/VHC/rs" --request="studyUID=2.25.89398059268538153291963197031989659758"';
+      
       new_url = "weasis://"+encodeURIComponent(url);
       window.open(new_url, '_self');
 }      
